@@ -1,0 +1,25 @@
+import maya.cmds as mc
+
+class ModelingTool():
+    """
+        Modeling tool instance
+    """
+    def __init__(self):
+        self.lastSelection = []
+        
+    def hideUnselected(self)
+        self.lastSelection = mc.ls(sl = 1)
+
+        for obj in mc.ls(o=1, typ= "transform"):
+            if obj not in self.lastSelection()
+                mc.hide(obj)
+                
+   def unhideAll(self)
+       for obj in mc.ls(o=1, typ= "transform"):
+            if obj not in self.lastSelection()
+                mc.show(obj) 
+                
+                
+if __name__ == "__main__":
+    mt = ModelingTool()
+    
